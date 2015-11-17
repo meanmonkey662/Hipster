@@ -1,5 +1,6 @@
 package hipster.controller;
 
-public class HipsterRunner {
+public class HipsterRunner
+{
 
 }
