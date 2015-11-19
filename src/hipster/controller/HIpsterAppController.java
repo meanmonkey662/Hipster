@@ -3,7 +3,7 @@ package hipster.controller;
 import hipster.model.Hipster;
 import hipster.view.HipsterFrame;
 
-public class HIpsterAppController 
+public class HipsterAppController 
 {
 	private Hipster firstHipster;
 	private HipsterFrame baseFrame;

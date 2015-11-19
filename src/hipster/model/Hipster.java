@@ -6,11 +6,22 @@ public class Hipster
 	private String [] hipsterPhrases;
 	private Book [] hipsterBooks;
 	
+	public Book[] getHipsterBooks() {
+		return hipsterBooks;
+	}
+
+	public void setHipsterBooks(Book[] hipsterBooks) 
+	{
+		this.hipsterBooks = hipsterBooks;
+	}
+
 	public Hipster()
 	{
 		this.name = "";
 		this.hipsterPhrases = new String[4];
+		this.hipsterBooks = new Book[3];
 		setupArray();
+		setupBooks();
 	}
 	
 	private void setupArray()
@@ -22,8 +33,27 @@ public class Hipster
 	}
 	
 	private void setupBooks()
-	
-	public Hipster(String name)
+	{
+		Book firstBook, secondBook, thirdBook;
+		
+		firstBook = new Book();
+		firstBook.setAuthor("Joe Nordson");
+		firstBook.setSubject("Computers in the future");
+		firstBook.setPageCount(1456);
+		firstBook.setPrice(43);
+		
+		secondBook = new Book();
+		secondBook.setAuthor("Hip Hipstonian");
+		secondBook.setSubject("How to be hip.");
+		secondBook.setPageCount(23356);
+		secondBook.setPrice(12);
+		
+		thirdBook = new Book(855, "Philip Moorley", "Computers in the future", "Computers are cool", 124.99);
+		
+		hipsterBooks[0] = firstBook;
+		hipsterBooks[1] = secondBook;
+		hipsterBooks[2] = thirdBook;
+	}
 
 	public String getName()
 	{
